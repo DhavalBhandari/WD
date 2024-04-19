@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" align="center">
+
+        <!-- name [a-zA-z]+ -->
+        <!-- <input type="text" pattern="[a-zA-z]+" placeholder="Enter your name" title="min3 charset" required> -->
+        <input type="text" pattern="[a-zA-z]{3,6}" placeholder="Enter your name" title="min3 charset" required>
+        <br>
+        <!-- <input type="text" pattern="[0-9]+" placeholder="Enter your number" title="10 only number" required> -->
+        <input type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your number" title="10 only number" required>
+        <br>
+
+        <input pattern="[a-zA-z0-9]{3,6}" title="mini 3 and max 6" minlength="3" maxlength="6"  placeholder="enter your password" type="password" required >
+        <br>
+
+        <input pattern="[a-zA-z0-9]+'@'+[a-z]+'.'+[a-z]{2,3}" title="mini 3 and max 6"   placeholder="enter your email" type="text" required >
+        <br>
+        <!-- shubhamjadav65@gmail.com -->
+        <!-- [a-zA-z0-9]+'@'+[a-z]+'.'+[a-z]{2,3} -->
+
+        <input type="number" min="1" max="6" placeholder="Quntity">
+
+        <input type="submit">
+    </form>
+</body>
+</html>

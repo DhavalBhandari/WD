@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        sup {
+            color: red;
+        }
+
+        .first,
+        .last,
+        .middle {
+            font-size: xx-small;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Admissions Form</h2>
+    <h5>Enter your admission information below</h5>
+    <hr>
+
+    <form action="">
+        <table>
+            <tr>
+                <td><label>Name<sup>*</sup></label></td>
+            </tr>
+            <tr>
+                <td class="first"><input type="text"><br>First Name</td>
+                <td class="middle"><input type="text"><br>Middle initial</td>
+                <td class="last"><input type="text"><br>LastName</td>
+            </tr>
+            <tr>
+                <td><label>Birth Date*</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option></option>
+                        <option>jan</option>
+                        <option>febr</option>
+                    </select>
+                    <select>
+                        <option></option>
+                        <option>mon</option>
+                        <option>tue</option>
+                        <option>wed</option>
+                    </select>
+                    <select>
+                        <option></option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+    &nbsp;<label>Gender<sup>*</sup></label><br>
+    <input type="radio" name="gender">Male<br>
+    <input type="radio" name="gender">FeMale<br>
+    <input type="radio" name="gender">Decline to Answer<br>
+    &nbsp;<label>Are you Hispanic or Latino<sup>*</sup></label><br>
+
+    <input type="radio" name="mark">No<br>
+    <input type="radio" name="mark">Yes<br>
+    <input type="radio" name="mark">Decline to Answer
+</body>
+</html>
