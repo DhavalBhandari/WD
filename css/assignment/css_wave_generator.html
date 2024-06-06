@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            /* background-color: black; */
+            height: 599px;
+            width: 100%;
+            position: relative;
+            background-image: url(img/wave.png);
+            background-repeat: no-repeat;
+        }
+
+        .main-content {
+            text-align: center;
+            color: white;
+            padding-top: 160px;
+            line-height: 40px;
+            letter-spacing: 3px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 10px 10px 10px black;
+            font-size: large;
+        }
+
+        .design {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            gap: 20px;
+        }
+
+        .wave {
+            position: absolute;
+            height: 299px;
+            width: 1366px;
+            top: 300px;
+            overflow-y: hidden;
+        }
+
+        .img {
+            height: 50px;
+            width: 50px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position: absolute;
+            cursor:cell;
+            background-size: cover;
+        }
+        .img::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 50%;
+        }
+        .img:hover::before {
+            opacity: 1;
+        }
+
+        .img1 {
+            left: 300px;
+            top: 110px;
+            background-image: url(img/profile_pic1.jpeg);
+        }
+
+        .img2 {
+            left: 500px;
+            top: 135px;
+            background-image: url(img/profile_pic2.jpeg);
+        }
+
+        .img3 {
+            left: 700px;
+            top: 132px;
+            background-image: url(img/profile_pic3.jpeg);
+        }
+
+        .img4 {
+            left: 900px;
+            top: 88px;
+            background-image: url(img/profile_pic4.jpeg);
+        }
+
+        .img5 {
+            left: 1100px;
+            top: 33px;
+            background-image: url(img/profile_pic5.jpeg);
+        }
+
+        .line {
+            color: black;
+            font-size: 40px;
+            position: absolute;
+            transform: rotate(90deg);
+            display: none;
+        }
+
+        .img1:hover~.line1,
+        .img1:hover~.content1,
+        .img2:hover~.line2,
+        .img2:hover~.content2,
+        .img3:hover~.line3,
+        .img3:hover~.content3,
+        .img4:hover~.line4,
+        .img4:hover~.content4,
+        .img5:hover~.line5,
+        .img5:hover~.content5 {
+            display: block;
+        }
+
+        .img:hover{
+            transform: scale(1.1);
+        }
+
+        .line1 {
+            top: 160px;
+            left: 325px;
+        }
+
+        .line2 {
+            top: 187px;
+            left: 525px;
+        }
+
+        .line3 {
+            top: 185px;
+            left: 730px;
+        }
+
+        .line4 {
+            top: 140px;
+            left: 927px;
+        }
+
+        .line5 {
+            top: 85px;
+            left: 1127px;
+        }
+
+        .content {
+            position: absolute;
+            text-align: center;
+            line-height: 30px;
+            display: none;
+        }
+
+        .content1 {
+            top: 200px;
+            left: 250px;
+        }
+
+        .content2 {
+            top: 225px;
+            left: 450px;
+        }
+
+        .content3 {
+            top: 225px;
+            left: 650px;
+        }
+
+        .content4 {
+            top: 185px;
+            left: 855px;
+        }
+
+        .content5 {
+            top: 125px;
+            left: 1060px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-content">
+            <h2>OUR TEAM</h2>
+            <p>meet the craziest team.share your thoughts with there.</p>
+        </div>
+        <div class="design">
+            <div>_______</div>
+            <i class="fa-solid fa-circle" style="font-size: 6px;padding-top: 15px;"></i>
+            <div>_______</div>
+        </div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="0.5" stroke="black" stroke-width="5px"
+                    d="M0,96L48,101.3C96,107,192,117,288,133.3C384,149,480,171,576,176C672,181,768,171,864,149.3C960,128,1056,96,1152,74.7C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+            <div class="img img1"></div>
+            <div class="img img2"></div>
+            <div class="img img3"></div>
+            <div class="img img4"></div>
+            <div class="img img5"></div>
+            <span class="line line1">__</span>
+            <span class="line line2">__</span>
+            <span class="line line3">__</span>
+            <span class="line line4">__</span>
+            <span class="line line5">__</span>
+            <div class="content1 content ">
+                <h3>WEB DESIGNER</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="content2 content">
+                <h3>WEB DESIGNER</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="content3 content">
+                <h3>WEB DESIGNER</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="content4 content">
+                <h3>WEB DESIGNER</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="content5 content">
+                <h3>WEB DESIGNER</h3>
+                <p>UI/UX Designer</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            height: 650px;
+            width: 100%;
+            position: relative;
+        }
+
+        .img {
+            height: 570px;
+            width: 100%;
+            background: url("img/clip_path_photo.jpg");
+            clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .nav {
+            height: 100px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .logo {
+            height: 39px;
+            width: 80px;
+            border: 3px solid white;
+            font-size: 35px;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .logo::first-letter {
+            background-color: aliceblue;
+            color: rgb(12, 118, 160);
+            font-weight: bold;
+        }
+
+        ul li,
+        a {
+            list-style: none;
+            text-decoration: none;
+            transition: 0.1s;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        ul {
+            display: flex;
+            gap: 50px;
+            /* position: absolute;
+            left: 250px; */
+        }
+
+        a:hover {
+            border-bottom: 3px solid rgb(207, 59, 5);
+            color: #cf3b05;
+            padding-bottom: 10px;
+        }
+
+        .btn {
+            height: 30px;
+            width: 30px;
+            background-color: gray;
+            font-size: 25px;
+            font-weight: 600;
+            transition: .1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        .ltbtn {
+            left: 20px;
+            top: 250px;
+        }
+
+        .gtbtn {
+            right: 20px;
+            top: 250px;
+        }
+
+        .btn:hover {
+            background-color: #cf3b05;
+        }
+
+        .content {
+            height: 400px;
+            width: 600px;
+            /* background-color: orangered; */
+            left: 380px;
+            top: 180px;
+            position: absolute;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        h6{
+            font-size: 20px;
+            font-weight:700;
+        }
+
+        h1{
+            font-size:50px;
+            letter-spacing: 5px;
+            line-height:80px;
+        }
+
+        p{
+            margin-top: 20px;    
+        }
+        .line i{
+            font-size:10px;
+            color:#cf3b05;
+        }
+        .line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .line > div{
+            font-size: 30px;
+        }
+
+        .cnt-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
+            transition: 5s;
+        }
+
+        .cnt-btn1 {
+            height: 50px;
+            width: 220px;
+            border: 3px solid white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .cnt-btn1:hover {
+            background-color: #cf3b05;
+        }
+
+
+        .sub-main {
+            position: relative;
+            height: 600px;
+        }
+
+        .anchor {
+            height: 45px;
+            width: 45px;
+            box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            background-color: royalblue;
+            position: absolute;
+            left: 655px;
+            top: -25px;
+        }
+
+        .main-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            position: absolute;
+            top: 100px;
+            left: 118px;
+        }
+
+        .box {
+            height: 300px;
+            width: 250px;
+            position:  relative ;
+        }
+
+        .border {
+            height: 40px;
+            width: 40px;
+            border: 1px solid black;
+            position: absolute;
+            transition: .5s ease;
+            left:100px;
+            
+        }
+        
+       .box i{
+        margin-top: 15px;
+        font-size: 20px;
+        position: absolute;
+        left:111px;
+        top:-3px;
+       }
+
+        .box:hover .border {
+            transform: rotate(45deg);
+            border-color: #cf3b05;
+        }
+        .box:hover h4{
+            color: #cf3b05;
+        }
+        .box>h4{
+            position: absolute;
+            left:65px;
+            top:70px;
+        }
+        .box>p{  
+            position: absolute;
+            
+            top:100px;
+            text-align: center;
+        }
+        .design{
+            position: absolute;
+            left:100px;
+            top:90px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img">
+            <div class="nav">
+                <div class="logo">Logo</div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">PORTFOLIO</a></li>
+                        <li><a href="">PRICING</a></li>
+                        <li><a href="">TEAM</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTENT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aerrow">
+                <div class="ltbtn btn">&lt;</div>
+                <div class="gtbtn btn">&gt;</div>
+            </div>
+            <div class="content">
+                <h6>Our Clients Are Our First Priority </h6>
+                <h1>WELCOME TO SKY</h1>
+                <div class="line">
+                    <div>---------------</div>
+                    <i class="fa-solid fa-circle"></i>
+                    <div>---------------</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis
+                    delectus,
+                    pariatur eius minima
+                    commodi, enim maxime ad nam, eligendi quam fugiat. Iste dolorem laudantium dolores vel explicabo
+                    similique enim.
+                </p>
+                <div class="cnt-btn">
+                    <div class="cnt-btn1">GET STARTED NOW</div>
+                    <div class="cnt-btn1">LEARN MORE</div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-main">
+            <div class="anchor"><i class="fa-solid fa-anchor"></i></div>
+            <div class="main-box">
+                <div class="box1 box">
+                    <div class="border"></div>
+                    <div class="position"><i class="fa-solid fa-glasses"></i></div>
+                    <h4>SLEEK DESIGN</h4>
+                    <div class="design">_____</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, aut!</p>
+
+                </div>
+                <div class="box2 box">
+                    <div class="border"></div>
+                    <div class="position"><i class="fa-regular fa-heart"></i></div>
+                    <h4>CLEAN CODE</h4>
+                    <div class="design">_____</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, aut!</p>
+                </div>
+                <div class="box3 box">
+                    <div class="border"></div>
+                    <div class="position"><i class="fa-regular fa-lightbulb" style="margin-left: 2px;"></i></div>
+                    <h4 style="margin-left:-10px;">CREATIVE IDEAS</h4>
+                    <div class="design">_____</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, aut!</p>
+                </div>
+                <div class="box4 box">
+                    <div class="border"></div>
+                    <div class="position"><i class="fa-regular fa-message"></i></div>
+                    <h4 style="margin-left:-9px;">FREE SUPPORT</h4>
+                    <div class="design">_____</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, aut!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
