@@ -1,0 +1,348 @@
+@media only screen and (max-width:600px) and (min-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        color: #35414b;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    header {
+        height: 1400px;
+    }
+
+    nav {
+        padding-right: 110px;
+        gap: 280px;
+        font-size: 20px;
+
+    }
+
+    .nav-list,
+    .auth {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .header-section {
+        margin-right: 130px;
+    }
+
+    .first {
+        display: none;
+    }
+
+    .second {
+        padding-left: 15px;
+    }
+
+    .header-content h1 {
+        font-size: 45px;
+        letter-spacing: normal;
+    }
+
+    .search-btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input {
+        width: 350px;
+        border-radius: 5px;
+
+    }
+
+    .try-it-free {
+        border-radius: 5px;
+        width: 350px;
+    }
+
+    .graph {
+        height: 300px;
+        width: 450px;
+        margin-top: -780px;
+        margin-left: 22px;
+    }
+
+    .logo-design>p {
+        padding: 0px;
+        margin-top: 60px;
+        padding-right: 100px;
+        padding-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .img-box {
+        margin-right: 110px;
+        margin-bottom: 50px;
+    }
+
+    .img {
+        height: 35px;
+        width: 100px;
+        background-size: 60px;
+    }
+
+    .img5 {
+        display: none;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        gap: 350px;
+    }
+
+    .timeline {
+        height: auto;
+        width: auto;
+    }
+
+    .box-1 {
+        width: 300px;
+        top: 30px;
+        left: 13px;
+        font-size: 11px;
+    }
+
+    .border {
+        margin-left: 27px;
+        padding: 0 10px;
+    }
+
+    .icon-1,
+    .icon-1 i {
+        height: 17px;
+        width: 17px;
+        font-size: 9px;
+    }
+
+    .icon-2,
+    .icon-2 i {
+        height: 17px;
+        width: 17px;
+        font-size: 9px;
+    }
+
+    .box-2 {
+        top: 145px;
+        left: 235px;
+        width: 240px;
+        height: 280px;
+        font-size: 11px;
+    }
+
+    .profile {
+        height: 25px;
+        width: 25px;
+        background-size: 25px;
+    }
+
+    .information {
+        margin: 25px;
+    }
+
+    .text-box {
+        margin-left: 25px;
+        margin-top: -20px;
+        padding: 12px;
+        width: 190px;
+    }
+
+    .send {
+        margin-left: 115px;
+    }
+
+    .servey {
+        margin-left: -200px;
+    }
+
+    .servey-information {
+        text-align: center;
+        width: 310px;
+        margin-left: 40px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .servey-information:hover {
+        border-left: none;
+        border-bottom: 8px solid #794cff;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .servey-information p {
+        padding-top: 8px;
+        line-height: 25px;
+    }
+
+    h1.second {
+        font-size: 20px;
+        margin-right: 100px;
+        padding-top: 50px;
+    }
+
+    .grid {
+        margin-right: 200px;
+        gap: 20px;
+    }
+
+    .grid-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-4 {
+        flex-direction: column-reverse;
+        margin-right: 100px;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .col-60 {
+        height: 300px;
+        width: 450px;
+        background-size: 480px;
+    }
+
+    .col-40 {
+        text-align: center;
+    }
+
+    .col-40 h5 {
+        font-size: 16px;
+        padding: 0px 100px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+
+    .col-40 p {
+        padding: 0 15px;
+    }
+
+    button {
+        width: 350px;
+    }
+
+    .why .com-h2 {
+        font-size: 15px;
+        margin-right: 100px;
+        padding: 0 60px;
+        margin-top: -50px;
+    }
+
+    .why p {
+        margin-left: -20px;
+        padding: 0 35px;
+        font-size: 15px;
+        line-height: 25px;
+        word-spacing: 1px;
+        width: 400px;
+    }
+
+    .gu,
+    .hu {
+        display: none;
+    }
+
+    .fu {
+        padding: 0;
+        margin-right: 100px;
+    }
+
+    .pro1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .trust {
+        width: 100%;
+        flex-direction: column;
+        padding: 150px 0;
+        border-radius: 0;
+        gap: 30px;
+    }
+
+    .trust h2 {
+        width: 350px;
+        margin-top: -100px;
+        margin-right: 150px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .storr-btn {
+        flex-direction: column;
+    }
+
+    .footer-information {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 0;
+    }
+
+    .footer-information ul {
+        margin-left: 40px;
+    }
+
+    .footer-information ul li {
+        display: none;
+    }
+
+    .ab {
+        height: 60px;
+        width: 180px;
+    }
+
+    .cd {
+        height: 70px;
+        width: 180px;
+    }
+
+    .cpyright-text {
+        margin-left: 35px;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .footer-information i {
+        display: block;
+    }
+
+    .aerrow {
+        display: flex;
+    }
+
+    .aerrow-1 {
+        gap: 340px;
+    }
+
+    .aerrow-2 {
+        gap: 351px;
+    }
+
+    .aerrow-3 {
+        gap: 369px;
+    }
+    .view-more-benefits {
+        display: block;
+        background-color: #ece5ff;
+        margin-top: 20px;
+        padding: 12px;
+        border-radius: 2px;
+        text-align: center;
+        width:400px;
+    }
+    
+    .view-more-benefits a {
+        color: #794cff;
+    }
+}
