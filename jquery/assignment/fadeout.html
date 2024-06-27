@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .main {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            background-color: white;
+            border: 1px solid;
+            font-size: 20px;
+            color: #000;
+            float:right;
+            margin-top: 20px;
+        }
+
+        .box {
+            height: 300px;
+            width: 300px;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            background: url(img/fade1.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .box2 {
+            background: url(img/fade2.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .box3 {
+            background: url(img/fade3.jpeg);
+            background-size: cover;
+            background-position: right;
+            background-size:450px;
+            background-repeat: no-repeat;
+        }
+        .final{
+            padding:80px;
+            margin: 50px 200px;
+            background-color: wheat;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="final">
+    <div class="main">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <button>Show</button>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $(".box1").fadeTo();
+
+            $(".box2").fadeTo("1000", 0.6);
+
+            $(".box3").fadeTo("1000", 0.2);
+        })
+
+
+    })
+</script>
+
+</html>
