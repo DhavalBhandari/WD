@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" type="image/x-icon" href="./image.png">
+    <link rel="stylesheet" href="registration_form.css">
+</head>
+
+<body>
+    <h1><a href="#">Student Registration Form</a></h1>
+    <form action="" method="post" name="myform" onsubmit="return validate()">
+        <div>
+            <div><label>First Name:</label></div>
+            <div><input type="text" placeholder="Enter your first name" name="fn" class="abc"></div>
+        </div>
+        <div>
+            <div><label>Last Name:</label></div>
+            <div><input type="text" placeholder="Enter your last name" class="abc"></div>
+        </div>
+        <div>
+            <div><label>Email:</label></div>
+            <div><input type="text" placeholder="it should contain @.." class="abc"></div>
+        </div>
+        <div>
+            <div><label>Mobile:</label></div>
+            <div><input type="number" placeholder="only 10 digits are allowed" name="phn" class="abc"></div>
+        </div>
+        <div>
+            <div><label>Gender:</label></div>
+            <div class="abc"><input type="radio" name="gender">Male<input type="radio" name="gender">Female</div>
+        </div>
+        <div>
+            <div><label>Date of Birth:</label></div>
+            <div><input type="date" class="abc"></div>
+        </div>
+        <div>
+            <div><label>Address:</label></div>
+            <div><textarea cols="66" rows="10"></textarea></div>
+        </div>
+        <div>
+            <div><label>City:</label></div>
+            <div><input type="text" class="abc"></div>
+        </div>
+        <div>
+            <div><label>Area PIN:</label></div>
+            <div><input type="text" class="abc"></div>
+        </div>
+        <div>
+            <div><label>State:</label></div>
+            <div><input type="text" class="abc"></div>
+        </div>
+        <div>
+            <div><label>City:</label></div>
+            <div><input type="text" class="abc"></div>
+        </div>
+        <div>
+            <div><label>Qualification</label></div>
+            <div><select>
+                    <option>Select Qualification</option>
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                </select></div>
+        </div>
+        <div>
+            <div><label>Specialization:</label></div>
+            <div><input type="checkbox">Computer Science<br>
+                <input type="checkbox">Information Technology<br>
+                <input type="checkbox">Computer Architecture<br>
+                <input type="checkbox">Tele Communication</div>
+        </div>
+        <div>
+            <div><label>Password:</label></div>
+            <div><input type="password" class="abc"></div>
+        </div>
+        <button>Registered</button>
+    </form>
+</body>
+<script>
+    function validate(){
+        var fn = document.forms["myform"]["fn"].value;
+        var namePattern = /^[a-zA-Z]+$/; 
+        if(fn=="" || fn==null)
+	    {
+		alert('Please fill out the User First Name');
+		return false ; 
+	    }
+        else if (!namePattern.test(fn)) {
+            alert('Name must only contain alphabets and no special characters or numbers.');
+            return false;
+        } 
+        else if (!(fn.length >= 3 && fn.length <= 6)) {
+            alert('Name must be between 3 and 6 characters long.');
+            return false;
+        } 
+        else {
+            
+        }
+
+        var number_chk = document.forms["myform"]["phn"].value;
+        var phnPattern = /^[0-9]{10,11}$/;
+        if (number_chk == "" || number_chk == null) {
+            alert('Please fill out the Mobile Number');
+            return false;
+        } else if (!phnPattern.test(number_chk)) {
+            alert('Mobile Number must be exactly 10 digits and contain only numbers.');
+            return false;
+        } else {
+            return true;
+        }
+}
+</script>
+</html>
