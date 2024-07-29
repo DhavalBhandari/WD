@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #333333;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.yellow {
+    color: #ffc200;
+}
+
+.grand-hotel {
+    font-family: "Grand Hotel", cursive;
+}
+
+.containerr {
+    height: 600px;
+}
+
+.title-here>h1 {
+    font-size: 100px;
+}
+
+.container1 {
+    background: url("img/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\)\ \(4\).svg"), url("img/1.png");
+    background-repeat: no-repeat;
+    background-size: contain, 55%;
+    background-position: left,500px;
+    background-color: #333333;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+ul,
+li a,
+li {
+    gap: 80px;
+    color: #ffffff;
+}
+
+li>a:hover {
+    color: #ffc200;
+}
+
+.logo {
+    background: url("img/Place\ Your\ Logo\ Here\ \(Double\ Click\ to\ Edit\).png");
+    padding: 40px 100px;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+}
+
+.title-here {
+    margin: 0 0 0 600px;
+}
+
+.title-here>p {
+    width: 600px;
+    height: 150px;
+    font-size: 30px;
+}
+
+.bttn {
+    width: 245px;
+    height: 50px;
+    background-color: #ffc200;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.section-main {
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.section-main>h3 {
+    font-size: 50px;
+}
+
+.information>h2 {
+    font-size: 80px;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+}
+
+.first {
+    background: url(img/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\)1.png);
+    background-size: cover;
+}
+
+.second {
+    background: url(img/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).png);
+    background-size: cover;
+}
+
+.third {
+    background: url(img/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\)\ \(1\).png);
+    background-size: cover;
+}
+
+.cmn-circle {
+    width: 200px;
+}
+
+.cmn {
+    gap: 150px;
+}
+
+.section-main>p {
+    font-size: 20px;
+}
+
+.container3 {
+    background: url("img/Vector\ Smart\ Object\ \(Double\ Click\ to\ Edit\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: top;
+}
+
+.fourth {
+    height: 300px;
+    width: 300px;
+    background: url("img/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\)\ \(4\).svg");
+    background-size: 300px;
+    transform: rotate(180deg);
+    background-position: left;
+
+}
+
+.main-3 {
+    gap: 200px;
+    padding: 120px 100px;
+}
+
+.information>h2,
+.main-4>h2,
+.information1>h2 {
+    font-size: 80px;
+}
+
+.information>p,
+.information1>p {
+    font-size: 25px;
+    width: 500px;
+    margin: 40px 0;
+}
+
+.container4 {
+    background-color: #333333;
+    text-align: center;
+}
+
+.main-4 {
+    padding-top: 100px;
+    background-image: url(img/2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 1050px;
+    background-position: center;
+}
+
+.main-4>p {
+    padding: 10px 380px 50px 380px;
+    font-size: 20px;
+
+}
+
+.round {
+    border: 5px solid white;
+    height: 150px;
+    width: 150px;
+}
+
+.round>:nth-child(1) {
+    margin: 40px 0px 5px 0px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.round>:nth-child(2) {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.statistic {
+    gap: 50px;
+    padding-bottom: 120px;
+}
+
+.container5 {
+    background-image: url("img/Design.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: bottom;
+    margin-bottom: 100px;
+
+}
+
+.five {
+    height: 300px;
+    width: 300px;
+    background: url("img/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).png");
+    background-size: 300px;
+    background-size: contain;
+}
+
+.main-5 {
+    padding: 160px 150px;
+}
+
+.container6 {
+    background: linear-gradient(rgba(255, 196, 0, 0.914), rgba(255, 196, 0, 0.714)), url(img/group7.png);
+    background-size: 100% 107%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #f7f3f3;
+}
+
+.container6>p {
+    padding: 250px 400px 10px 400px;
+    font-size: 30px;
+    color: #333333;
+}
+
+.container7 {
+    background: url(img/onion-tomoto.png);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container7>h3 {
+    padding-top: 150px;
+    font-size: 80px;
+
+}
+
+.container7>p {
+    padding: 30px 430px 40px 430px;
+    font-size: 20px;
+}
+
+input {
+    height: 40px;
+    width: 250px;
+    box-shadow: 0 0 2px grey;
+}
+
+button {
+    height: 41px;
+    width: 150px;
+    background-color: #ffc200;
+    border: 1px solid #ffc200;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.subscribe-btn {
+    width: 400px;
+    margin-left: 480px;
+}
+
+::placeholder {
+    padding-left: 20px;
+    opacity: 0.502;
+}
+
+.container8 {
+    background-color: #333333;
+    height: 500px;
+
+}
+
+.footer-main {
+    padding-top: 200px;
+
+}
+
+.footer-main>ul>p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer1>p {
+    width: 300px;
+}
+
+.social {
+    gap: 10px;
+}
+
+.footer-main>ul>li {
+    margin-top: 3px;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
