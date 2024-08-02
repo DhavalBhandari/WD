@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="" name="" onchange="">
+        <option value="Default">--select--</option>
+        <option value="Asc">Asc</option>
+        <option value="Desc">Desc</option>
+        <option value="filter">Filter</option>
+    </select>
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Sid</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="add">
+        </tbody>
+    </table>
+</body>
+<script>
+    user_obj=[
+    {
+        Sid:1,
+        Name:"Dhaval",
+        Salary:25000,
+        Age:22
+    },
+    {
+        Sid:2,
+        Name:"Abhishek",
+        Salary:15000,
+        Age:15
+    },
+    {
+        Sid:3,
+        Name:"Devang",
+        Salary:10000,
+        Age:18
+    },
+    {
+        Sid:4,
+        Name:"Arjun",
+        Salary:10000,
+        Age:22
+    }
+    ]
+    let tr=''
+    user_obj.map((i)=>{
+        tr+='<tr><td>'+i.Sid+'</td><td>'+i.Name+'</td><td>'+i.Salary+'</td><td>'+i.Age+'</td></tr>'
+    })
+    document.getElementById("add").innerHTML=tr;
+
+    let age_vise=user_obj.filter((i)=>{
+        if(i.Age>=18){
+            tr+='<tr><td>'+i.Sid+'</td><td>'+i.Name+'</td><td>'+i.Salary+'</td><td>'+i.Age+'</td></tr>'  
+        }
+    })
+    document.getElementById("add").innerHTML=tr;
+
+</script>
+</html>
