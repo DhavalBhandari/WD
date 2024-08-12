@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table{
+            background-color: aquamarine;
+        }
+        td,input,select{
+            padding:10px;
+            font-size:15px;
+        }
+        fieldset{
+            width: 300px;
+        }
+    </style>
+  </head>
+  <body>
+    <form id="myform">
+        <fieldset><legend>Registraion Form</legend>
+      <table id="mytable">
+        <tr>
+          <td><label for="bookingchoice">Choice of booking:</label></td>
+          <td>
+            <select id="bookingchoice" name="bookingchoice" onchange="select(this)">
+              <option value="">Select booking type</option>
+              <option value="full">Full day booking</option>
+              <option value="half">Half day booking</option>
+              <option value="hour">Hourly booking</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="username">Username</label></td>
+          <td>
+            <input type="text" id="un" name="un" />
+          </td>
+        </tr>
+        <tr>
+            <td><label for="mobileno">Mobile Number</td>
+            <td>
+              <input type="text" id="mn" name="mn" />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</td>
+            <td>
+              <input type="email" id="email" name="email" />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="noOfPersons">No of Persons:</td>
+            <td>
+              <input type="number" id="noOfPersons" name="noOfPersons" />
+            </td>
+        </tr>
+        <tr><td><button>Slot Book</button></tr></td></tr>
+      </table>
+    </fieldset>
+    </form>
+  </body>
+  <script>
+    const removeAddRows = (formTbl)=>{
+        while(formTbl.rows.length > 6){
+            formTbl.deleteRow(6)
+        }
+    }
+        function select(){
+            let get=document.getElementById("bookingchoice").value;
+            let formTable = document.getElementById("mytable");
+            console.log(get)
+            let tr = document.createElement("tr");
+            removeAddRows(formTable)
+
+            if(get=="full"){
+              
+                let tdLabel = document.createElement("td");
+                let label = document.createElement("label");
+                label.setAttribute("for", "date");
+                label.innerText = "Date";
+                tdLabel.appendChild(label);
+
+                let tdInput = document.createElement("td");
+                let input = document.createElement("input");
+                input.setAttribute("type", "date");
+                input.setAttribute("id", "date");
+                input.setAttribute("name", "date");
+                tdInput.appendChild(input);
+
+                tr.appendChild(tdLabel);
+                tr.appendChild(tdInput);
+
+                formTable.appendChild(tr);
+            }
+            else if(get=="half"){
+                let tdLabelDate = document.createElement("td");
+                let labelDate = document.createElement("label");
+                labelDate.setAttribute("for", "date");
+                labelDate.innerText = "Date";
+                tdLabelDate.appendChild(labelDate);
+
+                let tdInputDate = document.createElement("td");
+                let inputDate = document.createElement("input");
+                inputDate.setAttribute("type", "date");
+                inputDate.setAttribute("id", "date");
+                inputDate.setAttribute("name", "date");
+                tdInputDate.appendChild(inputDate);
+
+                tr.appendChild(tdLabelDate);
+                tr.appendChild(tdInputDate);
+
+                formTable.appendChild(tr);
+
+                let slotRow = document.createElement("tr");
+                let tdLabelSlot = document.createElement("td");
+                let labelSlot = document.createElement("label");
+                labelSlot.setAttribute("for", "slot");
+                labelSlot.innerText = "Slot";
+                tdLabelSlot.appendChild(labelSlot);
+
+                let tdInputSlot = document.createElement("td");
+                let selectSlot = document.createElement("select");
+                selectSlot.setAttribute("id", "slot");
+                selectSlot.setAttribute("name", "slot");
+
+                let option1 = document.createElement("option");
+                option1.value = "";
+                option1.text = "Select";
+
+                let option2 = document.createElement("option");
+                option2.value = "breakfast";
+                option2.text = "Breakfast";
+
+                let option3 = document.createElement("option");
+                option3.value = "lunch";
+                option3.text = "Lunch";
+
+                let option4 = document.createElement("option");
+                option4.value = "dinner";
+                option4.text = "Dinner";
+
+                selectSlot.appendChild(option1);
+                selectSlot.appendChild(option2);
+                selectSlot.appendChild(option3);
+                selectSlot.appendChild(option4);
+
+                tdInputSlot.appendChild(selectSlot);
+                slotRow.appendChild(tdLabelSlot);
+                slotRow.appendChild(tdInputSlot);
+
+                formTable.appendChild(slotRow);
+            }
+            else if(get=="hour"){
+                let tdLabel=document.createElement("td");
+                let label=document.createElement("label");
+                label.setAttribute("for","date");
+                label.innerText="Date";
+                tdLabel.appendChild(label);
+
+                let tdInput = document.createElement("td");
+                let input = document.createElement("input");
+                input.setAttribute("type", "date");
+                input.setAttribute("id", "date");
+                input.setAttribute("name", "date");
+                tdInput.appendChild(input);
+
+                tr.appendChild(tdLabel);
+                tr.appendChild(tdInput);
+                formTable.append(tr)
+
+
+                let timeRow = document.createElement("tr");
+                let tdLabelTime = document.createElement("td");
+                let labelTime = document.createElement("label");
+                labelTime.setAttribute("for", "time");
+                labelTime.innerText = "Time";
+                tdLabelTime.appendChild(labelTime);
+
+                let tdInputTime = document.createElement("td");
+                let inputTime = document.createElement("input");
+                inputTime.setAttribute("type", "time");
+                inputTime.setAttribute("id", "time");
+                inputTime.setAttribute("name", "time");
+                tdInputTime.appendChild(inputTime);
+
+                timeRow.appendChild(tdLabelTime);
+                timeRow.appendChild(tdInputTime);
+                formTable.appendChild(timeRow);
+            }
+        }
+    </script>
+</html>
