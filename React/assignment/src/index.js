@@ -10,6 +10,9 @@ import Websiteinfo from './shopping/Websiteinfo';
 import Slider from './shopping/Slider';
 import ModalLogin from './modal/ModalLogin';
 import Mousehover from './moveelement/Mousehover';
+import Textform from './Textform.jsx'
+import Usestate from './Usestate.jsx'
+import Propss from './Propss.jsx'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,7 +26,9 @@ root.render(
     <Slider />
     {/* <ModalLogin /> */}
     {/* <Mousehover /> */}
-
+    {/* <Propss name={"Dhaval"}/>
+    <Usestate />
+    <Textform heading={"Enter The Text Below"}/> */}
     </React.StrictMode>
 );
 
