@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Lightbox Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            padding: 20px;
+        }
+        .gallery-image {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+        img{
+            height: 300px;
+            width:300px;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Bootstrap Lightbox Gallery</h1>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="img/download_1.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/download2.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/download3.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="img/download4.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/download5.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/download6.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 3">
+            </div>
+        </div>
+                <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <img src="img/images7.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/images8.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/images9.jpeg" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal" alt="Placeholder 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lightboxModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="lightboxImage" src="" class="img-fluid" alt="" style="margin-left: 80px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.querySelectorAll('.gallery-image').forEach(image => {
+            image.addEventListener('click', event => {
+                const modalImage = document.getElementById('lightboxImage');
+                modalImage.src = event.target.src;
+                modalImage.alt = event.target.alt;
+            });
+        });
+    </script>
+</body>
+</html>
