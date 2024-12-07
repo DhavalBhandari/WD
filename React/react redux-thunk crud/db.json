@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "name": "Adam",
+      "address": "London",
+      "email": "adan@gmail.com",
+      "contact": "435456",
+      "id": 1
+    },
+    {
+      "name": "dhavalbhandari",
+      "email": "dhvlbhndr@gmail.com",
+      "contact": "654321234",
+      "address": "asdfgfds",
+      "id": 2
+    }
+  ]
+}
